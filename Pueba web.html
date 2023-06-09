@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda de Ropa en Línea</title>
+</head>
+<body>
+  <header>
+    <h1>Tienda de Ropa en Línea</h1>
+  </header>
+
+  <section>
+    <h2>Productos</h2>
+    <ul>
+      <li>
+        <span>Camiseta</span>
+        <span>$20</span>
+        <button onclick="agregarAlCarrito('Camiseta')">Agregar al carrito</button>
+      </li>
+      <li>
+        <span>Pantalón</span>
+        <span>$30</span>
+        <button onclick="agregarAlCarrito('Pantalón')">Agregar al carrito</button>
+      </li>
+      <!-- Agrega más productos aquí -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito"></ul>
+    <p>Total: <span id="total"></span></p>
+    <button onclick="realizarCompra()">Realizar Compra</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
